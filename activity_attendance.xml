@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    tools:ignore="ExtraText">
 
     <TextView
         android:id="@+id/tvHeader"
-        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:background="#4CA"
+        android:background="#44CCAA"
         android:gravity="center"
         android:hint="Search student..."
         android:minHeight="48dp"
@@ -33,7 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F7F9FB"
-        android:padding="12dp">
+        android:padding="12dp"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,26 +48,26 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
                 android:text="Student Attendance Table"
                 android:textColor="#2C3E50"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:padding="10dp" />
+                android:textStyle="bold" />
 
             <!-- Table Header -->
             <TableLayout
                 android:id="@+id/tableLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:stretchColumns="1,2,3,4,5"
-                android:background="#FFFFFF"
-                android:padding="4dp"
-                android:elevation="4dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
                 android:divider="#DDDDDD"
-                android:showDividers="middle">
+                android:elevation="4dp"
+                android:padding="4dp"
+                android:showDividers="middle"
+                android:stretchColumns="1,2,3,4,5">
 
                 <!-- Header Row -->
                 <TableRow
@@ -74,71 +77,76 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Roll No"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="PRN"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Name"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Present"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Absent"
                         android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
+                        android:textStyle="bold" />
                 </TableRow>
 
                 <!-- Student Rows -->
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="1"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000001"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Rahul Sharma"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent1"
                         android:layout_width="wrap_content"
@@ -149,29 +157,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="2"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000002"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Priya Patel"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent2"
                         android:layout_width="wrap_content"
@@ -182,29 +195,34 @@
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="3"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000003"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Arjun Singh"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent3"
                         android:layout_width="wrap_content"
@@ -215,29 +233,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="4"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000004"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Anjali Kumar"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent4"
                         android:layout_width="wrap_content"
@@ -248,29 +271,34 @@
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="5"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000005"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Vikram Gupta"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent5"
                         android:layout_width="wrap_content"
@@ -281,29 +309,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="6"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000006"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Sneha Reddy"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent6"
                         android:layout_width="wrap_content"
@@ -314,29 +347,34 @@
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="7"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000007"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Karan Joshi"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent7"
                         android:layout_width="wrap_content"
@@ -347,29 +385,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="8"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000008"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Meera Nair"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent8"
                         android:layout_width="wrap_content"
@@ -380,29 +423,34 @@
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="9"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000009"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Rohan Mehta"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent9"
                         android:layout_width="wrap_content"
@@ -413,29 +461,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="10"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000010"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Pooja Agarwal"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent10"
                         android:layout_width="wrap_content"
@@ -446,29 +499,34 @@
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="11"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000011"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Aditya Rao"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent11"
                         android:layout_width="wrap_content"
@@ -479,29 +537,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="12"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000012"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Kavita Sharma"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent12"
                         android:layout_width="wrap_content"
@@ -512,29 +575,34 @@
                 <TableRow
                     android:background="#FFFFFF"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="13"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000013"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Siddharth Jain"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent13"
                         android:layout_width="wrap_content"
@@ -545,29 +613,34 @@
                 <TableRow
                     android:background="#F9F9F9"
                     android:padding="8dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="14"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="25062230000014"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="8dp"
                         android:text="Neha Verma"
-                        android:textColor="#000000"
-                        android:padding="8dp" />
+                        android:textColor="#000000" />
+
                     <CheckBox
                         android:id="@+id/present14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp" />
+
                     <CheckBox
                         android:id="@+id/absent14"
                         android:layout_width="wrap_content"
@@ -583,7 +656,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="#34495E"
+                android:background="#3498DB"
                 android:text="Submit Attendance"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
@@ -592,5 +665,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
